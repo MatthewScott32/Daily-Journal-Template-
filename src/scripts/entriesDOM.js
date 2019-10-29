@@ -1,7 +1,7 @@
 /*
-    Purpose: To render all journal entries to the DOM
+Purpose: To render all journal entries to the DOM
 
-    Arguments: entries (array of objects)
+Arguments: entries (array of objects)
 */
 const renderDom = {
   renderJournalEntries(entries) {
@@ -14,3 +14,6 @@ const renderDom = {
     logArticle.innerHTML = HtmlForAllEntries
   }
 }
+
+export default renderDom
+import entryManager from "./entryComponent.js"
