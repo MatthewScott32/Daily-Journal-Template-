@@ -7,3 +7,6 @@
 */
 API.getJournalEntries()
 .then(response => renderDom.renderJournalEntries(response))
+
+import API from "./data.js"
+import renderDom from "./entriesDOM.js"
