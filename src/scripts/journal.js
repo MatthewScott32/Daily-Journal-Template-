@@ -1,3 +1,5 @@
+import API from "./data.js"
+import renderDom from "./entriesDOM.js"
 /*
     Main application logic that uses the functions and objects
     defined in the other JavaScript files.
@@ -8,5 +10,18 @@
 API.getJournalEntries()
 .then(response => renderDom.renderJournalEntries(response))
 
-import API from "./data.js"
-import renderDom from "./entriesDOM.js"
+
+const record = document.querySelector("#recordButton").addEventListener("click", function(){
+    event.preventDefault()
+    const allInput= {
+         date: document.querySelector("#dateInput").value,
+         concept: document.querySelector("#conceptInput").value,
+         entry: document.querySelector("#entryInput").value,
+         mood: document.querySelector("#moodInput").value
+    }
+
+    
+    API.newJournalEntry(allInput)
+    .then(API.getJournalEntries).then(renderDom.renderJournalEntries)
+    
+})

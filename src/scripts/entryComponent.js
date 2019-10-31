@@ -10,7 +10,16 @@ const entryManager = {
         <p>${journalEntry.date}</p>
       </section>
     `
+  },
+
+  generateObject(date, concept, entry, mood) {
+    return {
+      date: date,
+      concept: concept ,
+      entry: entry,
+      mood: mood
   }
+}
 }
 
 export default entryManager
