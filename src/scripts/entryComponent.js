@@ -1,10 +1,10 @@
 const entryManager = {
 
   makeJournalEntryComponent(journalEntry) {
-    // Create your own HTML structure for a journal entry
+    // structure for html "skeleton"
     return `
       <section>
-        <h3>${journalEntry.concept}</h3>
+        <h3>${journalEntry.concept}</h3>       
         <p>${journalEntry.entry}</p>
         <p>${journalEntry.mood}</p>
         <p>${journalEntry.date}</p>
@@ -15,8 +15,8 @@ const entryManager = {
   generateObject(date, concept, entry, mood) {
     return {
       date: date,
-      concept: concept ,
-      entry: entry,
+      concept: concept ,        
+      entry: entry,             //raw data that goes on the skeleton
       mood: mood
   }
 }
