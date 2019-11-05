@@ -22,17 +22,11 @@
       "mood": "Ok"
     },
     {
-
       "date": "",
       "concept": "",
       "entry": "",
       "mood": "Amazing",
-
-      "date": "2019-10-31",
-      "concept": "TEST 3",
-      "entry": "test 3",
-      "mood": "Great",
-
+      "id": 4
     }
   ]
 }
