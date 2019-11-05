@@ -1,5 +1,6 @@
 import API from "./data.js"
 import renderDom from "./entriesDOM.js"
+import moodContainer from "./moodFilter.js "
 /*
     Main application logic that uses the functions and objects
     defined in the other JavaScript files.
@@ -25,3 +26,5 @@ const record = document.querySelector("#recordButton").addEventListener("click",
     .then(API.getJournalEntries).then(renderDom.renderJournalEntries)
     
 })
+
+moodContainer.moodEvents();
